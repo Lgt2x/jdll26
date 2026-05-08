@@ -136,7 +136,7 @@
 
 ---
 
-<!-- Pierre-Lous-->
+<!-- Louis -->
 ### Tentatives de commercialisation
 - Ondsel: société américaine qui a tenté de développer une solution professionelle basée FreeCAD
 - A reversé dans l'open source l'atelier assemblage, le serveur de collaboration

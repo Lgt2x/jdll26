@@ -12,17 +12,17 @@
 <body>
     <div class="slides-container reveal">
         <div class="slides">
-            <section>
+            <section data-background-color="black">
                 <h1 class="r-fit-text">FreeCAD</h1>
                 <h2 class="r-fit-text">Votre propre modeleur paramétrique</h2>
                 <img class="r-stretch" src="/assets/freecad.png" />
                 <p>JDLL 2026 - 30/05/2026</p>
             </section>
-            <section>
+            <section data-background-color="black">
                 <p>2002–2026</p>
                 <p>Le passage à l’échelle d’un projet non structuré<br>vers un projet communautaire</p>
             </section>
-            <section>
+            <section data-background-color="darkslategrey">
                 <section>
                     <h3>Les contributeurs<br>présents aujourd’hui</h3>
                 </section>
@@ -55,7 +55,7 @@
                 </section>
             </section>
             <!-- Thomas -->
-            <section>
+            <section data-background-color="aquamarine">
                 <section>
                     <h2 class="r-fit-text">Quelques nouveautés</h2>
                 </section>
@@ -63,13 +63,24 @@
                     <h2 class="r-fit-text">1.1</h2>
                 </section>
                 <section>
-                    <ul>
-                        <li>Outil de transformation</li>
-                        <li>Clarification de la sélection</li>
-                        <li>Géométrie d’esquisse externe</li>
-                        <li>Prévisualisation des fonctions</li>
-                    </ul>
-                    <p>... entre autres !</p>
+                    <div class="r-stack">
+                        <img
+                            class="fragment"
+                            src="/assets/ClarifySelection.gif"
+                        />
+                        <img
+                            class="fragment"
+                            src="/assets/Std_Transform_Manip_relnotes_1.1.gif"
+                        />
+                        <img
+                            class="fragment"
+                            src="/assets/external.png"
+                        />
+                        <img
+                            class="fragment"
+                            src="/assets/PartDesignDraggers_relnotes_1.1.gif"
+                        />
+                    </div>
                 </section>
                 <section>
                     <h2 class="r-fit-text">1.2</h2>
@@ -84,33 +95,27 @@
                     <p>... entre autres !</p>
                 </section>
             </section>
-            <section>
+            <section data-background-color="skyblue">
                 <section>
                     <h1>Fonctionnement et structuration du projet</h1>
                 </section>
                 <section>
-                    <ul>
-                        <li>Suite au départ des mainteneurs historique</li>
-                        <li>Et l'élargissement de la communauté</li>
-                    </ul>
+                    <p>Suite au départ des mainteneurs historiques</p>
+                    <p>et à l’élargissement de la communauté</p>
                 </section>
                 <section>
-                    <h4>Rôles dans la communauté</h4>
-                    <ul>
-                        <li>Utilisateurs</li>
-                        <li>Contributeurs (code, fonctionnel, traductions)</li>
-                        <li>Relecteurs de code</li>
-                        <li>Mainteneurs</li>
-                        <li>Experts techniques</li>
-                    </ul>
+                    <h4>Rôles au sein du projet</h4>
+                    <p>Utilisateurs</p>
+                    <p>Contributeurs (code, fonctionnel, traductions)</p>
+                    <p>Relecteurs de code</p>
+                    <p>Mainteneurs</p>
+                    <p>Experts techniques</p>
                 </section>
                 <section>
                     <h4>Revues de code</h4>
-                    <ul>
-                        <li>Relectures communautaires collaboratives</li>
-                        <li>Passage en revue des contributions ouvertes tous les lundis</li>
-                        <li>Approbations requises par les groupes de travail</li>
-                    </ul>
+                    <p>Relectures communautaires collaboratives</p>
+                    <p>Revue des PR tous les lundis</p>
+                    <p>Approbations requises par les groupes de travail</p>
                 </section>
 
                 <section>
@@ -121,10 +126,23 @@
                     <p>Design Working Group</p>
                 </section>
                 <section>
+                    <ul>
+                        <li>S’assure de la cohérence de l’ergonomie</li>
+                        <li>Contribue à l’ergonomie des nouveaux outils</li>
+                        <li>Propose des améliorations</li>
+                    </ul>
+                </section>
+                <section>
                     <h1>CWG</h1>
                     <p>CAD Working Group</p>
                 </section>
-
+                <section>
+                    <ul>
+                        <li>Apporte une vision professionnelle de la CAO</li>
+                        <li>Donne son avis sur les fonctionnalités</li>
+                        <li>Présente comment font les autres programmes</li>
+                    </ul>
+                </section>
                 <!-- Louis -->
                 <section>
                     <h1>CQWG</h1>
@@ -132,33 +150,44 @@
                 </section>
                 <section>
                     <ul>
-                        <li>Donne une ligne directrice sur le code du projet</li>
-                        <li>Standardisation des règles de développement (guide)</li>
                         <li>En cours de formation</li>
+                        <li>Donne une ligne directrice sur le code</li>
+                        <li>Standardisation des règles de développement</li>
                     </ul>
                 </section>
                 <section>
                     <h1>IWG</h1>
                     <p>Infrastructure Working Group</p>
                 </section>
-
+                <section>
+                    <ul>
+                        <li>S’occupe du site web</li>
+                        <li>Gère les différentes plateformes</li>
+                        <li>Développe le nouveau site web</li>
+                    </ul>
+                </section>
                 <section>
                     <h2>Types de contributions</h2>
-                    <ul>
-                        <li>Bénévoles</li>
-                        <li>Sociétés commerciales (Ondsel, 3DConnexion)</li>
-                        <li>Stagiaires (GSoC, stage de fin d'études)</li>
-                        <li>Prestations rémunérées par la FPA</li>
-                    </ul>
+                    <p>Bénévoles</p>
+                    <p>Sociétés commerciales (Ondsel, 3DConnexion)</p>
+                    <p>Stagiaires (GSoC, stage de fin d’études)</p>
+                    <p>Prestations rémunérées par la FPA</p>
                 </section>
 
                 <!-- Thomas -->
                 <section>
-                    <h2>Google Summer of Code</h2>
+                    <h2>Google Summer of Code 2026</h2>
+                    <ol>
+                        <li>Simulations multicorps pour assemblages</li>
+                        <li>Amélioration de l’ergonomie de TechDraw</li>
+                        <li>Résurection de l’atelier robotique</li>
+                        <li>Support du buildingSMART data directory</li>
+                        <li>Esquisses 3D</li>
+                    </ol>
                 </section>
-
             </section>
-            <section>
+
+            <section data-background-color="gold">
                 <section>
                     <h2>Finances du projet</h2>
                 </section>
@@ -178,36 +207,43 @@
                 </section>
 
                 <section>
-                    <h2 class="r-fit-text"></h2>Tentatives de commercialisation
+                    <h2 class="r-fit-text">Tentatives de commercialisation</h2>
                 </section>
                 <section>
                     <h2 class="r-fit-text">Ondsel</h2>
-                    <ul>
-                        <li>Dates? Staffing</li>
-                        <li>Modèle économique</li>
-                        <li>Société américaine</li>
-                        <li>Contributions open source</li>
-                    </ul>
+                    <img height="200px" src="/assets/ondsel.png" />
                 </section>
                 <section>
-                    <h2>AstoCAD</h2>
+                    <p>2024–2025</p>
+                    <p>Société américaine</p>
+                    <p>Développe des fonctionnalités pour les pros</p>
+                    <p>Développe un hébergement de fichiers</p>
+                    <p>Contributions reversées à FreeCAD</p>
+                    <p>N’a pas réussi à devenir rentable</p>
                 </section>
-
                 <section>
-                    <h2>Consultants</h2>
+                    <h2 class="r-fit-text">AstoCAD</h2>
+                    <img height="200px" src="/assets/astocad.png" />
+                </section>
+                <section>
+                    <p>Depuis 2025</p>
+                    <p>Ancien employé d’Ondsel et contributeur régulier</p>
+                    <p>Vend un abonnement vers une version avancée</p>
+                    <p>Reverse ses contributions à FreeCAD</p>
+                </section>
+                <section>
+                    <h2 class="r-fit-text">Consultants</h2>
                     <ul>
-                        <ul>
-                            <li>https://wiki.freecad.org/Books/fr</li>
-                            <li></li>
-                            <li>https://freecad-france.com/</li>
-                        </ul>
+                        <li>Auteurs de livres : <a href="https://wiki.freecad.org/Books/">wiki.freecad.org/Books</a></li>
+                        <li>Conférenciers : Alexander Sadowski (Alsado)</li>
+                        <li>Formateurs : Jo Hinchliffe, FreeCAD France</li>
                     </ul>
                 </section>
             </section>
-            <section>
+            <section data-background-color="sandybrown">
                 <!-- Louis -->
                 <section>
-                    <h2 class="r-fit-text">Défis actuels</h2>
+                    <h2 class="r-fit-text">Défis</h2>
                 </section>
                 <section>
                     <h2 class="r-fit-text">Éclatement des plateformes de contribution</h2>
@@ -215,7 +251,7 @@
                         <li>Historique: serveur Mantis</li>
                         <li>Discord</li>
                         <li>GitHub</li>
-                        <li>Codeberg?</li>
+                        <li>Codeberg ?</li>
                     </ul>
                 </section>
                 <section>
@@ -224,17 +260,17 @@
                         <li>Forum</li>
                         <li>IRC</li>
                         <li>Matrix</li>
-                        <li>Futur: Discourse?</li>
+                        <li>Futur : Discourse ?</li>
                     </ul>
                 </section>
                 <section>
                     <h2 class="r-fit-text">Gouvernance du projet</h2>
                     <ul>
                         <li>Processus décisionnaire compliqué</li>
-                        <li>Pas de "BDFL"</li>
-                        <li>FPA: n'a pas la main sur le projet</li>
-                        <li>Mainteneurs: opinions divergentes</li>
-                        <li>Contributeurs: encore pire</li>
+                        <li>Pas de « BDFL »</li>
+                        <li>FPA: n’a pas la main sur le projet</li>
+                        <li>Mainteneurs : opinions divergentes</li>
+                        <li>Contributeurs : encore pire</li>
                     </ul>
                 </section>
                 <section>
@@ -252,6 +288,14 @@
                     <ul>
                         <li>Augmentation des coûts de structure sans augmentation des donations</li>
                     </ul>
+                </section>
+            </section>
+            <section data-background-color="black">
+                <section>
+                    conclusion
+                </section>
+                <section>
+                    <p class="r-fit-text">?</p>
                 </section>
             </section>
         </div>
